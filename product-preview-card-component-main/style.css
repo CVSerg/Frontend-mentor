@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1000px;
+    background-color: #f2ebe3;
+}
+
+p {
+    font-size: 14px;
+}
+
+.container {
+    margin: 3rem auto;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-component img {
+    width: 300px;
+    height: auto;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.right-component {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    padding: 2rem;
+}
+
+.spaced-text {
+    color: #6c7289;
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding-bottom: 16px;
+}
+
+h2 {
+    color: #1c232b;
+    font-size: 28px;
+    width: 60%;
+    margin-bottom: 24px;
+}
+
+.p-text {
+    color: #6c7289;
+    font-family: "Montserrat", serif;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.pricing-info {
+    display: flex;
+    align-items: center;
+}
+
+.discount-price {
+    padding-right: 1rem;
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: hsl(158, 36%, 37%);
+}
+
+.original-price {
+    color: #6c7289;
+    text-decoration: line-through;
+}
+
+button {
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    width: 240px;
+    height: 48px;
+    border-radius: 4px;
+    margin-top: 1.6rem;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+}
+
+button:hover {
+    background-color: hsl(158, 42%, 18%);
+}
+
+.cart-icon {
+    padding-right: 10px;
+}
+.located-button{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 
+    font-family: "Montserrat", serif;
+    font-family: "Fraunces", serif;
+*/
+
+
+/* 
+
+
+Media queries
+
+
+*/
+@media screen and (max-width: 1000px) {
+    .mobile-img {
+        display: block;
+    }
+
+    .left-component img {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-component {
+        width: 100%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        margin: 3rem auto;
+    }
+
+    .pricing-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-component button {
+        max-width: 100%;
+    }
+    button{
+        width: 80%;
+    }
+    .centered{
+        display: flex;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3E5D8;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Young Serif", serif;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    color: #575351;
+    padding: 0 1rem;
+}
+
+#recipe-card {
+    background-color: #ffff;
+    margin: 4rem auto;
+    width: 735px;
+    border-radius: 20px;
+}
+
+
+.main-header {
+    color: #2a2a27;
+    margin: 1rem 0;
+    font-size: 25px;
+    padding: 0 1rem;
+
+
+}
+
+.omelette-img {
+    width: 735px;
+    border-radius: 4px;
+}
+
+.preparation-time-container {
+    margin: 2rem 0rem;
+    padding: 1.5rem 0rem 1.5rem 4rem;
+    background-color: #fff7fc;
+    border-radius: 7px;
+}
+
+.ingredients-container {
+    padding: 1.5rem 1rem 1.5rem 2rem;
+}
+
+.instructions-container {
+    padding: 1.5rem 1rem 1.5rem 2rem;
+}
+
+.nutrition-container {
+    padding: 1.5rem 1rem 1.5rem 2rem;
+}
+
+.perp-time-heading {
+    font-family: "Outfit", serif;
+    color: #6f103D;
+}
+
+li {
+    font-family: "Outfit", sans-serif;
+    padding-left: 1rem;
+    margin: 1rem 0rem;
+    color: #575351;
+}
+
+li::marker {
+    color: #6f103D;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.gold-text {
+    color: #7e5039;
+
+}
+
+.gold-list li::marker {
+    color: #7e5039;
+    font-weight: bold;
+}
+
+.divider {
+    background: #e2e2e2;
+    height: 2px;
+    margin: 2rem 0rem;
+}
+
+.nutrition-table {
+    margin: 2rem 0;
+    display: flex;
+}
+
+.macro-p {
+    width: 300px;
+    padding-left: 3rem;
+}
+
+.nutrition {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+@media  screen and (max-width: 700px) {
+    #recipe-card {
+        width: 90%;
+    }
+    .omelette-img {
+        display: block;
+        width: 100%
+    }
+    .preparation-time-container {
+        padding: 1.5rem 0rem 1.5rem 3rem;
+    }
+}

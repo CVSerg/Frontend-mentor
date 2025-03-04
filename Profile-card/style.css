@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", serif;
+}
+
+body {
+    background-color: #19A1AE;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -21vw -55vh, 55vw 35vh;
+}
+
+#profile-card {
+    width: 350px;
+    height: 375px;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-img {
+    background-image: url(./images/bg-pattern-card.svg);
+    width: 100%;
+    height: 138px;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    border: 5px solid white;
+    z-index: 2;
+    margin-top: 90px;
+}
+
+.white-bg-container {
+    background-color: #ffff;
+    border-radius: 0 0 15px 15px;
+}
+
+
+
+
+/* 
+
+
+Utility Greyish. we can use on evry part.
+
+
+*/
+.light-text {
+    color: #6B7082;
+    font-weight: 400;
+}
+
+.name-age {
+    text-align: center;
+    padding: 3rem;
+}
+
+h3 {
+    color: #2E3349;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 14px;
+    font-size: 400;
+    padding-top: 7px;
+}
+
+.divader {
+    width: 100%;
+    height: 1px;
+    background-color: #E8E9EC;
+    margin: 1.5rem 0rem;
+}
+
+#profile-info {
+    display: flex;
+    column-gap: 3rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+p {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    padding-top: 5px;
+}
+
+
+/* 
+
+MEDIA QUERIES
+
+*/
+@media screen and (max-width: 1024px) {
+    body {
+
+        background-position: -86vw -31vh, 60vw 23vh;
+    }
+}
+
+@media screen and (max-height: 740px) {
+    #profile-card {
+        width:90%;
+    }
+}

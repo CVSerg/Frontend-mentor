@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", serif;
+}
+
+body {
+    background-image: url("./images/bg-pattern-top-desktop.svg"), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 1vw 0vh, 35vw 9vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+#five-star-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.main-heading {
+    color: #512051;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 3rem;
+    width: 60%
+}
+
+.main-heading-p {
+    color: #927B91;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 25px;
+    padding-top: 2rem;
+}
+
+.reviwe {
+    background-color: #F7F2F7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+    padding: 0rem 2rem;
+    width: 455px;
+    height: 56px;
+}
+
+.five-star-mentions {
+    color: #512051;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#review-2 {
+    margin-left: 2rem;
+}
+
+#review-3 {
+    margin-left: 4rem;
+}
+
+#review-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.review-card {
+    border-radius: 8px;
+    background-color: #512051;
+    width: 350px;
+    height: 234px;
+    padding: 1.5rem 1rem;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.avatar-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 1rem;
+
+}
+
+.avatar-name {
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.verified-buyer-text {
+    color: #EE69A4;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 4px;
+}
+
+.review-card-text {
+    color: #FFF;
+    font-size: 17px;
+    line-height: 22px;
+    padding-top: 1rem;
+}
+
+#review-card-1 {
+    margin: 0rem;
+}
+
+#review-card-2 {
+    margin-top: 2rem;
+}
+
+#review-card-3 {
+    margin-top: 4rem;
+}
+
+/* 
+
+Media queries
+
+*/
+@media screen and (max-width:1024px) {
+    body {
+        background-image: url("./images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: -20vw 10vh;
+    }
+
+    #five-star-reviews {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .main-heading {
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-heading-p {
+        width: 100%;
+    }
+
+    .five-star-mentions {
+        margin-top: 1rem;
+        
+    }
+
+    #review-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;   
+    }
+    .review-card {
+        width: 100%;
+        height: 250px;
+        padding: 1.5rem 1rem;
+    }
+    #review-card-1 {
+        margin: 1rem;
+        width: ;
+    }
+    
+    #review-card-2 {
+        margin: 0rem;
+    }
+    
+    #review-card-3 {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    #review-2 {
+        margin: 0rem;
+    }
+    
+    #review-3 {
+        margin: 0rem;
+    }
+    .reviwe {
+        margin: 1rem 0rem;
+        padding: 0rem 1rem;
+        width: 100%;
+        height: 73px;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px red solid;
+
+    }
+
+}
