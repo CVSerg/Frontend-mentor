@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", serif;
+}
+
+body {
+    background-color: #ECF2F8;
+}
+
+/* 
+
+a utility class(any time we give this class to any element of our HTML
+they are just gonna dissapear.
+
+ */
+.display-none {
+    display: none;
+}
+
+.article-priview-container {
+    width: 730px;
+    box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.34);
+    display: flex;
+    align-items: center;
+    margin: 3rem auto 0 auto;
+}
+
+.drawers-img {
+    border-radius: 10px 0 0 10px;
+    width: 300px;
+    height: 290px;
+    display: block;
+}
+
+.article-content-container {
+    background-color: #ffff;
+    border-radius: 0px 10px 10px 0px;
+    padding: 2rem;
+    height: 290px;
+    width: 500px;
+}
+
+.main-heading {
+    color: #48556A;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: .25px;
+    padding-bottom: 1rem;
+}
+
+.preview-text {
+    color: #6e8098;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 1rem;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.date-name-avatar-container {
+    display: flex;
+}
+
+.author-avatar-image {
+    width: 21.5%;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.author-name {
+    letter-spacing: 0.70px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 1rem;
+}
+
+.share-btn-container {
+    width: 32px;
+    height: 32px;
+    background-color: #ECF2F8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chare-shape-container {
+    background-color: #48556A;
+    border-radius: 4px;
+    width: 248px;
+    height: 60px;
+    box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.34);
+    position: absolute;
+    left: 215px;
+    top: -55px;
+    cursor: pointer;
+}
+
+.chare-shape-container:hover {
+    background-color: #48556acc;
+    border-radius: 4px;
+    width: 248px;
+    height: 60px;
+    position: absolute;
+    left: 215px;
+    top: -55px;
+    cursor: pointer;
+}
+
+.share-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    column-gap: 20px;
+}
+
+.share-text-p {
+    color: #9DAEC2;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 5px;
+}
+.mobile-author-area {
+    visibility: hidden;
+}
+.mobile-social-sharing-bar{
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+
+    .article-priview-container {
+        margin: 3rem auto 0 auto;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .article-img-container {
+        width: 100%;
+    }
+
+    .drawers-img {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: 290px;
+    }
+
+    .article-content-container {
+        border-radius: 10px 10px 10px 10px;
+        padding: 1rem 1rem;
+        width: 100%;
+        height: 400px;
+    }
+
+    .preview-text {
+        padding: 1rem 1rem;
+    }
+
+    .author-info {
+        display: none
+    }
+
+    .avatar-container {
+        display: none;
+    }
+
+    .share-btn-container {
+        display: none;
+    }
+
+    .mobile-author-area {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0rem 1rem;
+    }
+
+    .mobile-avatar-container {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .mobile-social-share-btn-container {
+        width: 32px;
+        height: 32px;
+        background-color: #ECF2F8;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .mobile-share-btn-container {
+        width: 32px;
+        height: 32px;
+        background-color: #ECF2F8;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .mobile-social-sharing-bar {
+        width: 100%;
+        background-color: #48556A;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 4px;
+        height: 60px;
+        display: none;
+        padding: 2.7rem 1rem;
+    }
+
+    .mobile-share-icons-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.3rem;
+        column-gap: 20px;
+    }
+
+}
